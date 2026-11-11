@@ -1,0 +1,230 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Joaquin Cardenas} \\ \vspace{1pt}
+    \small Arequipa, Per\'u (UTC-5) $|$ \href{mailto:joaquin.data.dev@gmail.com}{\underline{joaquin.data.dev@gmail.com}} $|$
+    \href{https://linkedin.com/in/joaquincardenas-data}{\underline{linkedin.com/in/joaquincardenas-data}} $|$
+    \href{https://github.com/DaelFame}{\underline{github.com/DaelFame}}
+    \\ \vspace{4pt}
+    \small Accounting student (expected 2027) with KPMG audit experience and FP\&A/BI work turning budget data into
+    decisions. Ranked 1st globally in KPMG's Audit Foundations 1 (international cohort).
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Universidad Cat\'olica San Pablo (UCSP)}{Arequipa, Per\'u}
+      {Bachelor's degree in Accounting}{Expected 2027}
+    \resumeSubheading
+      {TECSUP}{Arequipa, Per\'u}
+      {Power BI Professional}{2022}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Audit Data Analyst Intern}{Jan. 2026 -- Mar. 2026}
+      {KPMG en Per\'u}{Lima, Per\'u}
+      \resumeItemListStart
+        \resumeItem{Ranked 1st globally in KPMG's Audit Foundations 1 training program (international cohort)}
+        \resumeItem{Reconciled accounts and validated data for IFRS audit engagements using SQL and advanced Excel}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Operations Analyst}{Aug. 2024 -- Aug. 2025}
+      {La Katita (Government \& Corporate Contracting)}{Arequipa, Per\'u}
+      \resumeItemListStart
+        \resumeItem{Managed logistics, budgeting and administration for large-scale institutional food service}
+        \resumeItem{Tracked budget vs.\ actual spend and built routing metrics that cut delivery times by 15\%}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Operations \& BI Analyst}{Jun. 2023 -- Jul. 2024}
+      {Triburritos (Fast Casual Food Industry)}{Arequipa, Per\'u}
+      \resumeItemListStart
+        \resumeItem{Built automated Power BI dashboards for cash flow, labor and KPIs, raising reporting efficiency 30\%}
+        \resumeItem{Analyzed transactional sales data to identify revenue leaks and cost-optimization opportunities}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Accounting Systems \& Data Associate}{Jan. 2023 -- Jun. 2023}
+      {Talleres Escarcina Torres (Automotive Service)}{Arequipa, Per\'u}
+      \resumeItemListStart
+        \resumeItem{Deployed an automated Power BI ecosystem on PostgreSQL for real-time AP/AR monitoring}
+        \resumeItem{Managed month-end closing and prepared preliminary financial statements}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {General Manager \& Revenue Analyst}{May 2020 -- Jun. 2022}
+      {Toro Loco Bar \& Grill (Hospitality)}{Arequipa, Per\'u}
+      \resumeItemListStart
+        \resumeItem{Analyzed sales trends and implemented electronic invoicing, driving a 55\% revenue increase}
+        \resumeItem{Managed full P\&L and built Power BI dashboards for cash flow, labor costs and revenue KPIs}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Operations Associate}{Dec. 2016 -- Mar. 2017 \& Dec. 2019 -- Mar. 2020}
+      {J-1 Program (Hospitality Operations, USA)}{Hawaii \& Ohio}
+      \resumeItemListStart
+        \resumeItem{Two seasonal contracts at high-volume US resorts; worked fully in English in a US corporate environment}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{FP\&A Forecasting \& Variance Analysis} $|$ \emph{Python, Power BI, pytest}}{2026}
+          \resumeItemListStart
+            \resumeItem{Rebuilt four years of statements into a driver-based model, tracing a 61\% net-income miss to operating expenses and isolating EUR 150,000 of unsupported expenses}
+            \resumeItem{Forecast next-year revenue within 0.3\% out-of-sample on a two-fold rolling-origin backtest}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Peru Budget Lakehouse} $|$ \emph{Python, SQL, DuckDB, Streamlit}}{2026}
+          \resumeItemListStart
+            \resumeItem{Built an end-to-end public budget platform processing 29.5M fact rows (8M source records) with 131 automated tests and a reconciliation gate}
+            \resumeItem{Orchestrated with Prefect/Docker; added an interactive Streamlit dashboard with an NL-to-SQL interface}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{UCSP Market Intelligence} $|$ \emph{Power BI, DAX, Python, Kimball}}{2026}
+          \resumeItemListStart
+            \resumeItem{Built a two-page decision deck on 17.4M public enrollment records, exposing a 1.6pp market-share leak masked by 19\% volume growth}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------CERTIFICATIONS-----------
+\section{Certifications}
+  \resumeSubHeadingListStart
+    \resumeItem{Data Analytics for Finance --- Universidad Cat\'olica San Pablo (2026)}
+    \resumeItem{Python Essentials 2: Intermediate --- Cisco (2026)}
+    \resumeItem{SQL Interactivo --- Desaf\'io Latam (2024)}
+  \resumeSubHeadingListEnd
+
+
+%-----------TECHNICAL SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Finance \& Accounting}{: FP\&A, Budgeting, Variance Analysis, Financial Reporting, AP/AR, Month-End Close, IFRS} \\
+     \textbf{Data \& Engineering}{: SQL, Power BI (DAX), Python (Polars, Pandas), Advanced Excel, Streamlit, DuckDB, Kimball, Parquet, Prefect, Docker, CI/CD} \\
+     \textbf{Languages}{: Spanish (native), English (professional)}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}

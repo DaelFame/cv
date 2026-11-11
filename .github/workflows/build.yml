@@ -1,0 +1,28 @@
+name: Build resume
+
+on:
+  push:
+    branches: [main]
+    paths: ['resume.tex']
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: xu-cheng/latex-action@v3
+        with:
+          root_file: resume.tex
+
+      - name: Commit the compiled PDF
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add resume.pdf
+          git diff --staged --quiet || git commit -m "chore: rebuild resume.pdf"
+          git push
