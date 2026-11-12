@@ -1,0 +1,230 @@
+%-------------------------
+% Resume in Latex
+% Author : Jake Gutierrez
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,10pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[spanish,es-noshorthands]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    \textbf{\Huge \scshape Joaquin Cardenas} \\ \vspace{1pt}
+    \small Arequipa, Per\'u (UTC-5) $|$ \href{mailto:joaquin.data.dev@gmail.com}{\underline{joaquin.data.dev@gmail.com}} $|$
+    \href{https://linkedin.com/in/joaquincardenas-data}{\underline{linkedin.com/in/joaquincardenas-data}} $|$
+    \href{https://github.com/DaelFame}{\underline{github.com/DaelFame}}
+    \\ \vspace{4pt}
+    \small Contabilidad (previsto 2027) con auditor\'ia en KPMG y trabajo de FP\&A/BI convirtiendo datos de
+    presupuesto en decisiones. 1.\textsuperscript{er} puesto global en Audit Foundations 1 de KPMG.
+\end{center}
+
+
+%-----------FORMACIÓN-----------
+\section{Formaci\'on}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Universidad Cat\'olica San Pablo (UCSP)}{Arequipa, Per\'u}
+      {Licenciatura en Contabilidad}{Previsto 2027}
+    \resumeSubheading
+      {TECSUP}{Arequipa, Per\'u}
+      {Profesional en Power BI}{2022}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCIA-----------
+\section{Experiencia}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Pasante de Auditor\'ia de Datos}{Ene. 2026 -- Mar. 2026}
+      {KPMG en Per\'u}{Lima, Per\'u}
+      \resumeItemListStart
+        \resumeItem{1.\textsuperscript{er} puesto global en Audit Foundations 1 de KPMG (cohorte internacional)}
+        \resumeItem{Concilie cuentas y valid\'e datos en auditor\'ias IFRS, con SQL y Excel avanzado}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Analista de Operaciones}{Ago. 2024 -- Ago. 2025}
+      {La Katita (Contrataci\'on P\'ublica y Corporativa)}{Arequipa, Per\'u}
+      \resumeItemListStart
+        \resumeItem{Gestion\'e log\'istica, presupuesto y administraci\'on de alimentaci\'on institucional a gran escala}
+        \resumeItem{Segu\'i presupuesto vs.\ real y reduje los tiempos de entrega 15\% con m\'etricas de ruteo}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Analista de Operaciones y BI}{Jun. 2023 -- Jul. 2024}
+      {Triburritos (Alimentaci\'on Fast Casual)}{Arequipa, Per\'u}
+      \resumeItemListStart
+        \resumeItem{Automatic\'e dashboards de Power BI (caja, personal, KPIs) y sub\'i la eficiencia del reporting 30\%}
+        \resumeItem{Analic\'e ventas transaccionales para detectar fugas de ingresos y oportunidades de ahorro}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Asociado de Sistemas Contables y Datos}{Ene. 2023 -- Jun. 2023}
+      {Talleres Escarcina Torres (Servicio Automotriz)}{Arequipa, Per\'u}
+      \resumeItemListStart
+        \resumeItem{Desplegu\'e Power BI sobre PostgreSQL para monitoreo de AP/AR en tiempo real}
+        \resumeItem{Gestion\'e el cierre de mes y prepar\'e estados financieros preliminares}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Gerente General y Analista de Ingresos}{May. 2020 -- Jun. 2022}
+      {Toro Loco Bar \& Grill (Hospitalidad)}{Arequipa, Per\'u}
+      \resumeItemListStart
+        \resumeItem{Implement\'e facturaci\'on electr\'onica y crec\'i los ingresos 55\%}
+        \resumeItem{Administr\'e el P\&L completo y constru\'i dashboards de caja, costos laborales y KPIs}
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {Asociado de Operaciones}{Dic. 2016 -- Mar. 2017 y Dic. 2019 -- Mar. 2020}
+      {Programa J-1 (Operaciones de Hospitalidad, EE. UU.)}{Haw\'ai y Ohio}
+      \resumeItemListStart
+        \resumeItem{Dos contratos de temporada en resorts de EE. UU.; trabaj\'e \'integramente en ingl\'es}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROYECTOS-----------
+\section{Proyectos}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+          {\textbf{FP\&A Forecasting \& Variance Analysis} $|$ \emph{Python, Power BI, pytest}}{2026}
+          \resumeItemListStart
+            \resumeItem{Reconstru\'i cuatro a\~nos de estados en un modelo por drivers, trazando la ca\'ida del 61\% de la utilidad a gastos operativos y aislando EUR 150.000 sin respaldo}
+            \resumeItem{Pronostiqu\'e el ingreso del a\~no siguiente con 0.3\% de error en un backtest de dos pliegues}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{Peru Budget Lakehouse} $|$ \emph{Python, SQL, DuckDB, Streamlit}}{2026}
+          \resumeItemListStart
+            \resumeItem{Constru\'i una plataforma de presupuesto p\'ublico de 29.5M filas (8M fuente) con 131 tests y gate de conciliaci\'on}
+            \resumeItem{Orquestado con Prefect/Docker; dashboard Streamlit con interfaz NL-to-SQL}
+          \resumeItemListEnd
+      \resumeProjectHeading
+          {\textbf{UCSP Market Intelligence} $|$ \emph{Power BI, DAX, Python, Kimball}}{2026}
+          \resumeItemListStart
+            \resumeItem{Constru\'i un deck de dos p\'aginas sobre 17.4M registros, exponiendo una p\'erdida de 1.6 pp de share oculta tras +19\% de volumen}
+          \resumeItemListEnd
+    \resumeSubHeadingListEnd
+
+
+%-----------CERTIFICACIONES-----------
+\section{Certificaciones}
+  \resumeSubHeadingListStart
+    \resumeItem{Data Analytics for Finance --- Universidad Cat\'olica San Pablo (2026)}
+    \resumeItem{Python Essentials 2: Intermediate --- Cisco (2026)}
+    \resumeItem{SQL Interactivo --- Desaf\'io Latam (2024)}
+  \resumeSubHeadingListEnd
+
+
+%-----------HABILIDADES-----------
+\section{Habilidades}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Finanzas y Contabilidad}{: FP\&A, Presupuesto, An\'alisis de varianza, Reporting financiero, AP/AR, Cierre de mes, IFRS} \\
+     \textbf{Datos e Ingenier\'ia}{: SQL, Power BI (DAX), Python (Polars, Pandas), Excel avanzado, Streamlit, DuckDB, Kimball, Parquet, Prefect, Docker, CI/CD} \\
+     \textbf{Idiomas}{: Espa\~nol (nativo), Ingl\'es (profesional)}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
